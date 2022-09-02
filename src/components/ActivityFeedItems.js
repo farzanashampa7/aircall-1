@@ -30,8 +30,8 @@ const ActivityFeedItems = (props) => {
           setCallLists([]);
         }
       })
-      .catch((e) => {
-        console.log('Error', e);
+      .catch((error) => {
+        console.log(error);
       });
   };
 
@@ -51,7 +51,7 @@ const ActivityFeedItems = (props) => {
         setCallLists([...callLists, call]);
         setPresentState('ARCHIVE');
       })
-      .catch((e) => console.log(e, 'is the error l55'));
+      .catch((error) => console.log(error));
   };
 
   return (
